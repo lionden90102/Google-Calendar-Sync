@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Calendar Sync</title>
+    <link rel="icon" type="image/x-icon" href="images/website-icon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="authorize_button" onclick="handleAuthClick()">Authorize</div>
+    <div id="signout_button" onclick="handleSignoutClick()">Sign Out</div>
+    <div id="calendar-container">
+        <div id="calendar-header">
+            <button id="prev-month">&lt;</button>
+            <span id="month-year"></span>
+            <button id="next-month">&gt;</button>
+        </div>
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
